@@ -1,0 +1,23 @@
+$colors: (
+  default: (
+    text: #333,
+    button: (
+      text: #000,
+      background: #00f
+    )
+  )
+);
+
+@function colors($type: default, $element: null, $prop: null) {
+  @if $element and $prop {
+    @return map-get(map-get(map-get($colors, $type), $element), $prop);
+  }
+
+  @else if $element != null {
+    @return map-get(map-get($colors, $type), $element);
+  }
+
+  @else {
+    @return map-get(map-get($colors, $type), default);
+  }
+}
