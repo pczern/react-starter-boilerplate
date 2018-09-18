@@ -1,5 +1,5 @@
 # react-starter-boilerplate
-My boilerplate setup for every React Application
+My boilerplate setup for every React Application  
 used for my [website](https://github.com/pczern/pc)
 ## Features
 * API Server
